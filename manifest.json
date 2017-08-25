@@ -1,0 +1,23 @@
+{
+ "name": "status-check",
+ "version": "0.0.1",
+ "manifest_version": 2,
+ "description": "status check",
+ "icons": {
+  "128": "icons-26.png"
+ },
+ "permissions": [
+  "activeTab",
+  "tabs",
+  "webRequest",
+  "*://store.nintendo.co.jp/*"
+ ],
+ "background":{
+  "scripts":  ["background.js"]
+ },
+ "content_scripts": [{
+  "matches": ["*://*/*"],
+  "js": ["content.js", "dom.js"],
+  "run_at": "document_start"
+ }]
+}
