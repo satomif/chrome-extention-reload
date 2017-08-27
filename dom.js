@@ -9,7 +9,9 @@ var response = {reload : false, 'strContent' : strContent};
  if (strContent.indexOf("ただいまサイトが大変混雑しているため、アクセス可能な人数を制限中です。") != -1) {
    response.reload = true;
  }
-/*if (strContent.indexOf("Nintendo Switchは、在庫切れのため、ご購入できません。") != -1) {
+/*
+if (strContent.indexOf("Nintendo Switchは、在庫切れのため、ご購入できません。") != -1) {
   response.reload = true;
-}*/
+}
+*/
 response

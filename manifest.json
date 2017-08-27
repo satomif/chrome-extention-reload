@@ -17,7 +17,7 @@
  },
  "content_scripts": [{
   "matches": ["*://*/*"],
-  "js": ["content.js", "dom.js"],
+  "js": ["dom.js"],
   "run_at": "document_start"
  }]
 }
